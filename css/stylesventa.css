@@ -1,0 +1,179 @@
+:root {
+    --purpura: #6c3595;
+    --morado: #3e0c58;
+    --verde: #7fc241;
+    --amarillo: #fcb814;
+    --dark: #3e0c58;
+    --dark-x: #3e0c58;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.body {
+	font-family: myriad-pro,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+	font-size: 16px;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.bgdark { background-color: var(--purpura)}
+
+.navbar {
+    min-height: 5rem;
+    font-size: 20px;
+}
+.main {
+	background: url('../img/watercolor.png');
+	background-repeat: repeat;
+}
+#hero-container {
+    height: 600px;
+}
+
+#hero-background {
+    background-color:var(--purpura) ;
+    position: absolute;
+    width: 0;
+    height: 600px;
+    transition: 1s ease-in-out;
+}
+
+#hero-img {
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+
+    opacity: 0;
+    z-index: 1000;
+    transition: 2s ease-in-out;
+}
+
+.imagenS{
+    border-radius: 20px;
+}
+.img-container {
+    display: flex;
+    justify-content: center;
+    min-height: 600px;
+    align-items: center;
+}
+
+.main {
+	background: url('../img/watercolor.png');
+	background-repeat: repeat;
+}
+
+.spin {
+    width: 100%;
+    max-width: 450px;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+#hero-text {
+    opacity: 0;
+    transition: 2s ease-in-out;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--morado);
+}
+
+.principal{
+    width: 60%;
+    margin: 4% auto;
+}
+.imgthumbnail:hover{
+    filter: saturate(180%);
+    transform: scale(1.15);
+    transition: 2s;
+}
+
+.icon:hover{
+    transition: 2s;
+    transform:scale(1.5);
+}
+.ubicacion{
+    border-radius: 10px;
+    background: var(--purpura);
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+}
+.ubicacion:hover{
+    text-decoration: none;
+    background-color: var(--amarillo);
+    color: #fff;
+}
+footer .redesSociales{
+    background: #3e0c58;
+    padding: 60px 0;
+	height: 200px;
+}
+footer .contenedor{
+	
+    display: flex;
+    justify-content: center;
+	
+}
+footer .redesSociales a{
+    color: #fff;
+    text-align: center;
+    width: 70px;
+	height: 70px;
+    display: block;
+    padding: 15px 0;
+    border-radius: 3px;
+    font-size: 30px;
+    margin: 0 20px;
+	border-radius: 30%;
+}
+
+
+footer .redesSociales .twitter:hover{
+    background: #1da1f2;
+}
+footer .redesSociales .facebook:hover{
+    background: #3b5998;
+}
+footer .redesSociales .youtube:hover{
+    background: #ff0000;
+}
+footer .redesSociales .instagram:hover{
+    background: #f77737;
+}
+footer .redesSociales .rappi:hover{
+    background: #ececec;
+}
+footer .redesSociales .wsp:hover{
+    background: #075e54;
+}
+
+@media screen and(max-width:800px){
+    .car1{
+        height: 300px;
+    }
+}
